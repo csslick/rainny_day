@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fullscreen_video.html</title>
+  <style>
+    *{ margin: 0; padding: 0;}
+    #bg {
+      position: fixed;
+      left: 0; top: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    section{
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+    section > header {
+      margin-top: 30%; 
+    }
+    section > header > h2 {
+      font-size: 50px;
+    }
+    section > header > h3 {
+      font-size: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 배경영상 -->
+  <video 
+    id="bg"
+    loop
+    autoplay
+    src="./rain.mp4"></video>
+  <section>
+    <header>
+      <h2>Rainny Day</h2>
+      <h3>Bluese Cafe</h3>
+    </header>
+  </section>
+  <!-- 배경음악 -->
+  <audio 
+    autoplay
+    loop
+    src="./Sleep Away.mp3"></audio>
+</body>
+</html>
