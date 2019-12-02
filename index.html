@@ -27,7 +27,7 @@
     section > header > h3 {
       font-size: 30px;
     }
-
+    #btn { padding: 5px 10px;}
   </style>
 </head>
 <body>
@@ -41,12 +41,27 @@
     <header>
       <h2>Rainny Day</h2>
       <h3>Bluese Cafe</h3>
+      <button id="btn">play</button>
     </header>
   </section>
+
   <!-- 배경음악 -->
-  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-  <audio autoplay loop>
+  <audio id="myaudio" autoplay loop>
     <source src="./sleep_away.mp3" type="audio/mp3">
   </audio>
+
+  <script>
+
+    document.querySelector('#btn').onclick = function(){
+      // console.log('click')
+      var myaudio = document.getElementById('myaudio');
+      myaudio.play();
+    }
+
+
+
+
+
+  </script>
 </body>
 </html>
